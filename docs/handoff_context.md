@@ -13,6 +13,12 @@ Current published repositories:
 - `Averypen/vhedge-risk-allocation-demo`
 - `Averypen/equity-alpha-research-lab`
 - `Averypen/qinglong-ashare-research-lab`
+- `Averypen/quant-research-validation-toolkit`
+
+Recent enhancement:
+
+- `equity-alpha-research-lab` was enhanced through a PR workflow with XGBoost sweep, feature importance, OOS predictions, prediction-to-portfolio demo, embargo-aware split, and bias/validation documentation.
+- `quant-research-validation-toolkit` was added as a standalone public toolkit for look-ahead, label leakage, survivorship, purge/embargo, point-in-time universe, and tradability audits.
 
 Public policy:
 

@@ -16,8 +16,13 @@
 ### Batch 3
 
 - `vhedge-risk-allocation-demo`: defensive multi-asset allocation and volatility targeting demo.
-- `equity-alpha-research-lab`: synthetic equity factor research and validation workflow demo.
+- `equity-alpha-research-lab`: synthetic equity factor research, XGBoost sweep, and validation workflow demo.
 - `qinglong-ashare-research-lab`: A-share market-structure-aware research workflow demo.
+
+### Validation Layer
+
+- `quant-research-validation-toolkit`: synthetic research-bias validation toolkit.
+- PR workflow used for `equity-alpha-research-lab` XGBoost enhancement.
 
 ## Public Release Rules
 
@@ -30,3 +35,4 @@ Before any public push:
 5. Run toy demo when available.
 6. Confirm generated `runs/` output is ignored.
 7. Confirm public docs contain no proprietary production parameters.
+8. Confirm validation demos explicitly discuss look-ahead, leakage, survivorship, purge/embargo, and point-in-time universe assumptions.
