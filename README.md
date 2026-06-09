@@ -1,73 +1,64 @@
-# Averypen Quant Research & Systems Portfolio
+# Quant Research Portfolio
 
-A public, sanitized portfolio of quant research and quant systems architecture work.
+This repository is the public landing page for the Averypen quant research and systems architecture portfolio.
 
-This portfolio is designed to demonstrate how systematic research can be organized into production-style components: data infrastructure, signal research, portfolio construction, risk governance, dry-run execution, audit trails, and reproducible run manifests.
+It links together a set of sanitized public repositories that demonstrate research-to-production quant system design using synthetic data, mock execution, reproducible manifests, and public documentation.
 
-The public repositories intentionally use synthetic data, mock execution, and simplified examples. They do not disclose proprietary signals, private parameters, live broker configuration, real trading logs, paid vendor data, or broker-identifier information.
+## Published Repositories
 
-## Portfolio Thesis
-
-Most public quant repositories focus on isolated notebooks or single backtests. This portfolio focuses on the full research-to-production lifecycle:
-
-```text
-data -> signal -> portfolio -> risk -> execution -> audit -> reporting -> iteration
-```
-
-The objective is to show system design discipline rather than advertise a trading result.
-
-## Batch 1 Public Repositories
-
-| Repository | Status | Purpose |
-|---|---:|---|
-| `ares-public-architecture` | Built locally | Synthetic-data demonstration of a US single-name equity profit engine architecture |
-| `vnq-datalake-public-manual` | Built locally | Public manual for reproducible equity research data lake design |
-| `quant-research-portfolio` | Current repo | Portfolio entry point and project map |
-
-## Planned Repository Roadmap
-
-| Repository | Purpose | Public Boundary |
+| Repository | Capability Demonstrated | Status |
 |---|---|---|
-| `chronos-master-portfolio-demo` | Master portfolio governor combining defensive and return sleeves | Toy sleeves, synthetic equity curves, no production allocations |
-| `vhedge-risk-allocation-demo` | Defensive multi-asset allocation engine with volatility targeting | Synthetic ETF-style data, no live weights |
-| `equity-alpha-research-lab` | Generic US equity factor research framework | Toy factors and OOS validation, no proprietary ranking formula |
-| `qinglong-ashare-research-lab` | A-share market-structure-aware research framework | Synthetic A-share data with tradability flags, no real picks or frozen production patterns |
-| `quant-execution-audit-toolkit` | Dry-run order, fill, position, PnL, and manifest lifecycle | Mock broker only, no live broker settings |
+| [`ares-public-architecture`](https://github.com/Averypen/ares-public-architecture) | Modular US equity quant engine architecture with toy backtest | Published |
+| [`vnq-datalake-public-manual`](https://github.com/Averypen/vnq-datalake-public-manual) | Reproducible market data lake design and update manual | Published |
+| [`chronos-master-portfolio-demo`](https://github.com/Averypen/chronos-master-portfolio-demo) | Master portfolio governor and multi-sleeve risk control | Published |
+| [`quant-execution-audit-toolkit`](https://github.com/Averypen/quant-execution-audit-toolkit) | Dry-run execution and audit lifecycle | Published |
 
-## Core Capabilities Demonstrated
+## Current Portfolio Narrative
 
-- Modular system architecture
-- Reproducible research runs
-- Config snapshots and run manifests
-- Cost-aware and turnover-aware backtesting
-- Drawdown and exposure controls
-- Dry-run execution by default
-- Order-to-fill-to-position-to-PnL lifecycle design
-- Data lake schema and validation design
-- Market-structure-aware research planning for US and A-share markets
+The public repository set is designed to show an end-to-end quant systems view:
 
-## Public Safety Rules
+1. **Data infrastructure**: universe snapshots, schema design, validation, manifests.
+2. **Research engine**: synthetic OHLCV, toy ranking signal, portfolio construction, risk controls.
+3. **Master portfolio governance**: sleeve allocation, drawdown governor, volatility-aware scaling, cash spillover.
+4. **Execution lifecycle**: target weights to orders, simulated fills, positions, PnL, structured JSONL audit events.
+5. **Reproducibility**: config-driven runs, deterministic seeds, manifest output, tests.
 
-This portfolio follows a strict public boundary:
+## Design Boundary
 
-- No proprietary alpha logic
-- No production parameters
-- No live broker configuration
-- No broker identifiers
-- No real trading logs
-- No private market data cache
-- No paid vendor data
-- No investment advice
-- Synthetic data and mock execution only
+This public portfolio intentionally excludes:
 
-## How to Read This Portfolio
+- Proprietary production signals.
+- Private parameters.
+- Live platform configuration.
+- Real trading logs.
+- Paid vendor data.
+- Broker-identifier information.
+- Private strategy performance records.
 
-Start with:
+## Batch Status
 
-1. `ares-public-architecture` for a runnable toy quant lifecycle.
-2. `vnq-datalake-public-manual` for data lake engineering and validation design.
-3. This repository for the overall project map and future roadmap.
+### Batch 1: Published
 
-## Current Local Build State
+- `quant-research-portfolio`
+- `ares-public-architecture`
+- `vnq-datalake-public-manual`
 
-Batch 1 has been scaffolded and validated locally. Public GitHub push should only happen after the final security scan and repository review.
+### Batch 2: Published
+
+- `chronos-master-portfolio-demo`
+- `quant-execution-audit-toolkit`
+
+### Batch 3: Planned
+
+- `vhedge-risk-allocation-demo`
+- `equity-alpha-research-lab`
+- `qinglong-ashare-research-lab`
+
+## Review Guide
+
+For a quick review, start with:
+
+1. `ares-public-architecture` for the research engine.
+2. `chronos-master-portfolio-demo` for portfolio governance.
+3. `quant-execution-audit-toolkit` for execution and audit lifecycle.
+4. `vnq-datalake-public-manual` for data infrastructure design.

@@ -1,42 +1,33 @@
 # GitHub Build Roadmap
 
-## Batch 1: Foundation
+## Completed
 
-Status: In progress locally.
+### Batch 1
 
-Tasks:
+- `quant-research-portfolio`: public landing repository.
+- `ares-public-architecture`: synthetic research engine demo with toy backtest.
+- `vnq-datalake-public-manual`: public data lake manual.
 
-- Build `quant-research-portfolio` landing repository.
-- Build `ares-public-architecture` with toy backtest and tests.
-- Build `vnq-datalake-public-manual` with schema and validation examples.
-- Run local security scans.
-- Push only after final review.
+### Batch 2
 
-## Batch 2: Architecture Depth
+- `chronos-master-portfolio-demo`: master portfolio governor demo.
+- `quant-execution-audit-toolkit`: dry-run execution and audit lifecycle demo.
 
-Tasks:
+## Next
 
-- Add `chronos-master-portfolio-demo`.
-- Add `quant-execution-audit-toolkit`.
-- Demonstrate master sleeve governance and mock execution audit lifecycle.
+### Batch 3
 
-## Batch 3: Research Breadth
+- `vhedge-risk-allocation-demo`
+- `equity-alpha-research-lab`
+- `qinglong-ashare-research-lab`
 
-Tasks:
+## Release Rules
 
-- Add `vhedge-risk-allocation-demo`.
-- Add `equity-alpha-research-lab`.
-- Add `qinglong-ashare-research-lab`.
-- Use synthetic data and market-structure-aware examples.
+Before any public push:
 
-## Final Public Readiness Checklist
-
-- All repositories have README and DISCLAIMER.
-- All code examples run from clean install.
-- Tests pass.
-- No private paths.
-- No live broker details.
-- No real broker identifier or trading logs.
-- No paid vendor data.
-- No proprietary alpha logic.
-- No performance marketing language.
+1. Confirm git status is clean.
+2. Run strict private-path scan.
+3. Run broad sensitive keyword review.
+4. Run tests for code repositories.
+5. Run toy demo when available.
+6. Confirm generated `runs/` output is ignored.

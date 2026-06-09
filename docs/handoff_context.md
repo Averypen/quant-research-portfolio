@@ -1,45 +1,24 @@
-# Handoff Context for Future Chat Sessions
+# Handoff Context
 
-This file records the current public GitHub build plan.
+This repository is part of the Averypen public quant systems showcase.
 
-## Owner
+Current published repositories:
 
-GitHub username: `Averypen`
+- `Averypen/Averypen`
+- `Averypen/quant-research-portfolio`
+- `Averypen/ares-public-architecture`
+- `Averypen/vnq-datalake-public-manual`
+- `Averypen/chronos-master-portfolio-demo`
+- `Averypen/quant-execution-audit-toolkit`
 
-## Public Language
+Public policy:
 
-English only.
-
-## Public Level
-
-Architecture + mock code + toy backtest.
-
-## Main Repository Policy
-
-Private production repositories are read-only references. Do not modify or push private main repositories while building public GitHub showcase repositories.
-
-## Batch 1 Local Repositories
-
-Local root:
-
-```text
-~/github_showcase
-```
-
-Repositories:
-
-```text
-quant-research-portfolio
-ares-public-architecture
-vnq-datalake-public-manual
-```
-
-## Completed Local Work
-
-- `ares-public-architecture` scaffolded, tested, toy backtest runs, documentation upgraded.
-- `vnq-datalake-public-manual` scaffolded and documentation upgraded.
-- `quant-research-portfolio` scaffolded and scheduled for landing-page upgrade.
-
-## Next Logical Step
-
-Upgrade `quant-research-portfolio`, then perform final local preflight before creating public GitHub repositories and pushing.
+- English only.
+- Synthetic data only.
+- Dry-run or mock lifecycle only.
+- No proprietary production signals.
+- No private parameters.
+- No live platform configuration.
+- No real trading logs.
+- No paid vendor data.
+- Main private repository remains read-only and separate.
