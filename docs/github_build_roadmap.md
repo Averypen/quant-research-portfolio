@@ -13,15 +13,13 @@
 - `chronos-master-portfolio-demo`: master portfolio governor demo.
 - `quant-execution-audit-toolkit`: dry-run execution and audit lifecycle demo.
 
-## Next
-
 ### Batch 3
 
-- `vhedge-risk-allocation-demo`
-- `equity-alpha-research-lab`
-- `qinglong-ashare-research-lab`
+- `vhedge-risk-allocation-demo`: defensive multi-asset allocation and volatility targeting demo.
+- `equity-alpha-research-lab`: synthetic equity factor research and validation workflow demo.
+- `qinglong-ashare-research-lab`: A-share market-structure-aware research workflow demo.
 
-## Release Rules
+## Public Release Rules
 
 Before any public push:
 
@@ -31,3 +29,4 @@ Before any public push:
 4. Run tests for code repositories.
 5. Run toy demo when available.
 6. Confirm generated `runs/` output is ignored.
+7. Confirm public docs contain no proprietary production parameters.

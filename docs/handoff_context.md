@@ -10,6 +10,9 @@ Current published repositories:
 - `Averypen/vnq-datalake-public-manual`
 - `Averypen/chronos-master-portfolio-demo`
 - `Averypen/quant-execution-audit-toolkit`
+- `Averypen/vhedge-risk-allocation-demo`
+- `Averypen/equity-alpha-research-lab`
+- `Averypen/qinglong-ashare-research-lab`
 
 Public policy:
 
